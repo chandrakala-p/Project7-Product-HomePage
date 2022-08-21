@@ -5,13 +5,13 @@
     --orange: #e74f13;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 
-nav{
+nav {
     display: flex;
     flex: 1;
     height: 10vh;
@@ -19,23 +19,23 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding-left: 20px;
-    
+
     margin-top: 20px;
     font-family: "poppin";
 }
 
-nav img :last-child{
-   width:250px;
-   
+nav img :last-child {
+    width: 250px;
+
 }
 
-nav img:first-child{
+nav img:first-child {
     width: 90px;
     height: 30px;
 }
 
 .nav-items {
-    width: 500px;  
+    width: 500px;
     display: flex;
     list-style-type: none;
     justify-content: space-between;
@@ -47,18 +47,19 @@ nav img:first-child{
 
 }
 
-.nav-item{
+.nav-item {
     font-size: 20px;
     font-weight: lighter;
     color: #1a1818be;
     padding-right: 10px;
 }
-.nav-item.active-item{
+
+.nav-item.active-item {
     color: var(--orange);
     font-family: "Fredoka One";
 }
 
-.intro-section{
+.intro-section {
     display: flex;
     gap: 100px;
     width: 100vw;
@@ -66,34 +67,35 @@ nav img:first-child{
     /* font-family: "Fredoka One"; */
 }
 
-.left-section{
+.left-section {
     padding-left: 40px;
     padding-top: 30px;
 }
 
-.left-section h3{
- font-size: 30px;
-font-weight:600;
+.left-section h3 {
+    font-size: 30px;
+    font-weight: 600;
 }
-.left-section h3 img{
+
+.left-section h3 img {
     width: 50px;
     height: 30px;
 }
 
-.left-section h1{
+.left-section h1 {
     font-family: "Fredoka One";
     font-size: 70px;
     padding-bottom: 25px;
 }
 
 .text {
-    padding-top:40px ;
+    padding-top: 40px;
     padding-bottom: 30px;
     width: 650px;
     color: #a5a1a1bb;
 }
 
-.sub-headline{
+.sub-headline {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -104,18 +106,18 @@ font-weight:600;
     padding-left: 2em;
 }
 
-.sub-headline img{
+.sub-headline img {
     background-color: var(--orange);
     border-radius: 15px;
     padding: 5px;
     width: 15px;
 }
 
-.action-btns{
+.action-btns {
     margin-left: 150px;
 }
 
-.action-btn{
+.action-btn {
     padding: 10px 20px;
     border-radius: 20px;
     background-color: #e74f13;
@@ -123,62 +125,176 @@ font-weight:600;
     font-size: 18px;
     color: var(--white)
 }
+
 .right-section {
     display: flex;
     flex-direction: column;
     position: relative;
 }
-.headphone-div img:last-child{
-    width: 400px ;
-    height:370px ;
+
+.headphone-div img:last-child {
+    width: 400px;
+    height: 370px;
     margin-top: 10px;
     padding-right: -10px;
 }
 
-.discount-content{
+.discount-content {
     position: absolute;
     font-family: "Fredoka One";
     bottom: 12em;
-     left: -1rem;
-   color: var(--white);
-        font-weight: normal;
+    left: -1rem;
+    color: var(--white);
+    font-weight: normal;
 
 }
-.discount{
-    position:absolute;
-    width:120px;
+
+.discount {
+    position: absolute;
+    width: 120px;
     bottom: 10em;
     left: -3rem;
 }
-.dots{
-   
+
+.dots {
+
     display: flex;
     margin-bottom: 20px;
     margin: 5px 10em;
     gap: 30px;
 }
 
-.dots div{
+.dots div {
     width: 25px;
     height: 25px;
     border-radius: 20px;
 }
 
-.dot.yellow-dot{
+.dot.yellow-dot {
     background-color: #ffff00;
 }
-.dot.tomato-dot{
-background-color: #ff6347;
+
+.dot.tomato-dot {
+    background-color: #ff6347;
 }
-.dot.black-dot{
+
+.dot.black-dot {
     background-color: var(--black);
 }
 
-/* .dots button.action-btn{
-    width: 80px;
-    padding: 10px 60px;
-} */
-.right-section button{
+
+.right-section button {
     width: 180px;
     margin: 20px 8em;
+}
+
+@media screen and (max-width:760px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    nav {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav:nth-child(n) {
+        width: 100%;
+    }
+
+    .intro-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-section {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .left-section h3,
+    h1 {
+        width: 100%;
+    }
+
+    .left-section h1 {
+        font-size: 30px;
+    }
+
+    .action-btns {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .right-section {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+
+    }
+
+    .discount,
+    .discount-content {
+        display: none;
+    }
+
+    .dots {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .headphone-div {
+        width: 100%;
+    }
+
+    nav img:last-child {
+        width: 100%;
+    }
+
+    .headphone-div img:last-child {
+        width: 300px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .action-btn {
+        /* padding: 0; */
+        margin: 0;
+
+    }
 }
